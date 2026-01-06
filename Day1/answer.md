@@ -3,7 +3,7 @@
 
 ## Q1. Role of Frontend (FE)
 
-- **User interface:** The frontend is responsible for presenting information to users — layouts, visual components, typography, colors, and responsive design so the app looks good on different screen sizes.
+- **User interface:** The frontend is responsible for presenting information to users — layouts, visual components, colors, and responsive design so the app looks good on different screen sizes.
 - **User interaction:** It handles user interactions (clicks, typing, gestures), input validation, client-side state, and UI feedback (loading states, animations, error messages) to make the experience smooth and usable.
 - **Communication with backend:** The frontend sends requests to backend APIs (HTTP/HTTPS, WebSockets), consumes responses (JSON, HTML), and updates the UI. It also manages authentication tokens, caches results client-side, and applies optimistic updates when appropriate.
 
@@ -46,10 +46,4 @@ Why it’s used:
 - **Ecosystem:** The npm ecosystem gives access to a huge collection of libraries and tools for databases, testing, deployment, and utilities, speeding development.
 - **Single-language full-stack:** Using JavaScript on both frontend and backend reduces cognitive overhead, allows code sharing (models, validation), and simplifies hiring and tooling.
 - **Popular backend frameworks:** Express, Fastify, Koa, and NestJS are widely used for building APIs and microservices. Serverless platforms (AWS Lambda, Azure Functions) also have excellent JavaScript support.
-
----
-
-I wrote these answers in plain language and included practical examples. If you want, I can also:
-- add diagrams or ASCII flowcharts, or
-- create a small README with push steps and attempt to push this repo to GitHub for you.
 
