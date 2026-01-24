@@ -1,0 +1,56 @@
+1. Count the total number of students
+SELECT COUNT(*) AS total_students
+FROM students;
+
+2. Find the average age of students
+SELECT AVG(age) AS average_age
+FROM students;
+
+3. Find the minimum and maximum age
+SELECT MIN(age) AS minimum_age, MAX(age) AS maximum_age
+FROM students;
+
+4. Count how many students are enrolled in each course
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course;
+
+5. Count students whose age is greater than 20
+SELECT COUNT(*) AS students_above_20
+FROM students
+WHERE age > 20;
+
+6. Display course-wise student count
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course;
+
+7. Display only courses where student count is greater than 1
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course
+HAVING COUNT(*) > 1;
+
+8. Display courses sorted by highest student count first
+SELECT course, COUNT(*) AS student_count
+FROM students
+GROUP BY course
+ORDER BY student_count DESC;
+
+9. Fetch the latest 3 students based on created_at
+SELECT *
+FROM students
+ORDER BY created_at DESC
+LIMIT 3;
+
+10. Fetch the top 5 oldest students
+SELECT *
+FROM students
+ORDER BY age DESC
+LIMIT 5;
+
+11. Fetch students enrolled in a specific course, sorted by age (descending)
+SELECT *
+FROM students
+WHERE course = 'Computer Science'
+ORDER BY age DESC;
